@@ -1,0 +1,7 @@
+#!/bin/sh
+set -eu
+
+if git diff --cached --name-only | grep -q '^skill/'; then
+  scripts/update-skill-package.sh
+  git add naver-place-rank-cli.skill
+fi

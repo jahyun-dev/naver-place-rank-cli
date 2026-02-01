@@ -17,6 +17,7 @@
 
 # Skill packages
 *.skill
+!naver-place-rank-cli.skill
 
 # OS files
 .DS_Store
