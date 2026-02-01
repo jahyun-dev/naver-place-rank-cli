@@ -5,6 +5,43 @@ description: Use to run the local Go CLI that queries Naver Place rankings for a
 
 # Naver Place Rank CLI
 
+## Download (prebuilt binaries)
+
+Get a platform binary from GitHub Releases and extract it.
+
+Release page:
+
+```text
+https://github.com/jahyun-dev/naver-place-rank-cli/releases
+```
+
+Example (macOS arm64):
+
+```bash
+VERSION="v0.1.0"
+curl -L -o naver-place-rank.tar.gz "https://github.com/jahyun-dev/naver-place-rank-cli/releases/download/${VERSION}/naver-place-rank_${VERSION#v}_darwin_arm64.tar.gz"
+tar -xzf naver-place-rank.tar.gz
+./naver-place-rank --help
+```
+
+Example (Linux amd64):
+
+```bash
+VERSION="v0.1.0"
+curl -L -o naver-place-rank.tar.gz "https://github.com/jahyun-dev/naver-place-rank-cli/releases/download/${VERSION}/naver-place-rank_${VERSION#v}_linux_amd64.tar.gz"
+tar -xzf naver-place-rank.tar.gz
+./naver-place-rank --help
+```
+
+Example (Windows amd64, PowerShell):
+
+```powershell
+$VERSION = "v0.1.0"
+Invoke-WebRequest -Uri "https://github.com/jahyun-dev/naver-place-rank-cli/releases/download/$VERSION/naver-place-rank_$($VERSION.Substring(1))_windows_amd64.zip" -OutFile "naver-place-rank.zip"
+Expand-Archive -Path "naver-place-rank.zip" -DestinationPath "."
+.\naver-place-rank.exe --help
+```
+
 ## Quick start
 
 Build and run from the repo root:
