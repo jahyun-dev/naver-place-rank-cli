@@ -1,4 +1,4 @@
-module kidsnote-cli
+module github.com/jahyun-dev/naver-place-rank-cli
 
 go 1.20
 
