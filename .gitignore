@@ -1,0 +1,22 @@
+# Go
+/bin/
+/dist/
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+*.test
+*.out
+
+# Local builds
+/naver-place-rank
+
+# GoReleaser artifacts
+/goreleaser
+
+# Skill packages
+*.skill
+
+# OS files
+.DS_Store
